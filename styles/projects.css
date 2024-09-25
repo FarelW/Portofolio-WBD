@@ -70,7 +70,7 @@
     padding: 20px;
     color: var(--white);
     font-size: 18px;
-    background: rgba(0, 0, 0, 0.6); /* Add a background for readability */
+    background: rgba(0, 0, 0, 0.6);
     transition: opacity 0.3s ease;
     font-style: italic;
 }

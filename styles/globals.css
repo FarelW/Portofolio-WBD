@@ -17,86 +17,98 @@ body {
 
 @font-face {
     font-family: 'Neue';
-    src: url('/styles/fonts/NeueHaasDisplayXThin.ttf');
+    src: url('/styles/fonts/NeueHaasDisplayXThin.ttf') format('truetype');
     font-weight: 100;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Neue';
-    src: url('/styles/fonts/NeueHaasDisplayXThinItalic.ttf');
+    src: url('/styles/fonts/NeueHaasDisplayXThinItalic.ttf') format('truetype');
     font-weight: 100;
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Neue';
-    src: url('/styles/fonts/NeueHaasDisplayThin.ttf');
+    src: url('/styles/fonts/NeueHaasDisplayThin.ttf') format('truetype');
     font-weight: 200;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Neue';
-    src: url('/styles/fonts/NeueHaasDisplayThinItalic.ttf');
+    src: url('/styles/fonts/NeueHaasDisplayThinItalic.ttf') format('truetype');
     font-weight: 200;
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Neue';
-    src: url('/styles/fonts/NeueHaasDisplayLight.ttf');
+    src: url('/styles/fonts/NeueHaasDisplayLight.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Neue';
-    src: url('/styles/fonts/NeueHaasDisplayLightItalic.ttf');
+    src: url('/styles/fonts/NeueHaasDisplayLightItalic.ttf') format('truetype');
     font-weight: 300;
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Neue';
-    src: url('/styles/fonts/NeueHaasDisplayRoman.ttf');
+    src: url('/styles/fonts/NeueHaasDisplayRoman.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Neue';
-    src: url('/styles/fonts/NeueHaasDisplayRomanItalic.ttf');
+    src: url('/styles/fonts/NeueHaasDisplayRomanItalic.ttf') format('truetype');
     font-weight: 400;
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Neue';
-    src: url('/styles/fonts/NeueHaasDisplayMedium.ttf');
+    src: url('/styles/fonts/NeueHaasDisplayMedium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Neue';
-    src: url('/styles/fonts/NeueHaasDisplayMediumItalic.ttf');
+    src: url('/styles/fonts/NeueHaasDisplayMediumItalic.ttf') format('truetype');
     font-weight: 500;
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Neue';
-    src: url('/styles/fonts/NeueHaasDisplayBold.ttf');
+    src: url('/styles/fonts/NeueHaasDisplayBold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Neue';
-    src: url('/styles/fonts/NeueHaasDisplayBoldItalic.ttf');
+    src: url('/styles/fonts/NeueHaasDisplayBoldItalic.ttf') format('truetype');
     font-weight: 700;
     font-style: italic;
+    font-display: swap;
 }
 
 .navbar {
