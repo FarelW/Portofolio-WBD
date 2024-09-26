@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,12 +12,10 @@
         <link rel="stylesheet" href="/styles/about.css">
         <link rel="stylesheet" href="/styles/experiences.css">
         <link rel="stylesheet" href="/styles/projects.css">
-        <link rel="icon" type="image/jpeg" href="/styles/images/me.jpg">
-        <link rel="preload" href="/styles/images/me.jpg" as="image">
-        <link rel="preload" href="/styles/icons/logo.png" as="image">
-        <link rel="preload" href="/styles/icons/logoblack.png" as="image">
-        <link rel="preload" href="/styles/fonts/NeueHaasDisplayBold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
-        <link rel="preload" href="/styles/fonts/NeueHaasDisplayBoldItalic.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+        <link rel="icon" type="image/webp" href="/styles/images/me.webp">
+        <link rel="preload" href="/styles/images/me.webp" as="image">
+        <link rel="preload" href="/styles/icons/logo.webp" as="image">
+        <link rel="preload" href="/styles/icons/logoblack.webp" as="image">
         <link rel="preload" href="/styles/fonts/NeueHaasDisplayLight.ttf" as="font" type="font/ttf" crossorigin="anonymous">
         <link rel="preload" href="/styles/fonts/NeueHaasDisplayLightItalic.ttf" as="font" type="font/ttf" crossorigin="anonymous">
         <link rel="preload" href="/styles/fonts/NeueHaasDisplayMedium.ttf" as="font" type="font/ttf" crossorigin="anonymous">
@@ -27,43 +25,62 @@
         <link rel="preload" href="/styles/fonts/NeueHaasDisplayThin.ttf" as="font" type="font/ttf" crossorigin="anonymous">
         <link rel="preload" href="/styles/fonts/NeueHaasDisplayThinItalic.ttf" as="font" type="font/ttf" crossorigin="anonymous">
         <link rel="preload" href="/styles/fonts/NeueHaasDisplayXThin.ttf" as="font" type="font/ttf" crossorigin="anonymous">
-        <link rel="preload" href="/styles/fonts/NeueHaasDisplayXThinItalic.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+        <style>
+            :root {
+                --black: #0A0A0A;
+                --white: #F5F5F5;
+
+                --Neue: "Neue"
+            }
+
+            html {
+                scroll-behavior: smooth;
+            }
+
+            body {
+                margin: 0;
+                font-family: var(--Neue);
+                background-color: var(--black);
+            }
+        </style>
     </head>
     <body>
-        <nav class="navbar">
-            <a href="#"><img src="/styles/icons/logo.png" alt="logo" class="logo"/></a>
-            <label for="menu">
-                <img src="/styles/icons/hamburger.svg" alt="menu" class="navbar-hamburger"/>
-            </label>
-            <div class="navbar-menu">
-                <a href="#"><p>Home</p></a>
-                <a href="#about"><p>About</p></a>
-                <a href="#experiences"><p>Experiences</p></a>
-                <a href="#projects"><p>Projects</p></a>
-            </div>
-        </nav>
-        <input type="checkbox" id="menu" class="menu" hidden/>
-        <aside class="sidebar">
-            <div class="sidebar-close">
+        <header>
+            <nav class="navbar">
+                <a href="#"><img loading="lazy" src="/styles/icons/logo.webp" alt="logo" class="logo"/></a>
                 <label for="menu">
-                    <img src="/styles/icons/close.svg" alt="close" class="sidebar-close-icon"/>
+                    <img loading="lazy" src="/styles/icons/hamburger.svg" alt="menu" class="navbar-hamburger"/>
                 </label>
-            </div>
-            <div class="sidebar-menu">
-                <label class="sidebar-menu-label">
-                    Menu
-                </label>
-                <div class="sidebar-menu-list">
+                <div class="navbar-menu">
                     <a href="#"><p>Home</p></a>
                     <a href="#about"><p>About</p></a>
                     <a href="#experiences"><p>Experiences</p></a>
                     <a href="#projects"><p>Projects</p></a>
                 </div>
-            </div>
-            <div class="sidebar-logo">
-                <a href="#"><img src="/styles/icons/logoblack.png" alt="logo" class="logo"/></a>
-            </div>
-        </aside>
+            </nav>
+            <input type="checkbox" id="menu" class="menu" hidden/>
+            <aside class="sidebar">
+                <div class="sidebar-close">
+                    <label for="menu">
+                        <img loading="lazy" src="/styles/icons/close.svg" alt="close" class="sidebar-close-icon"/>
+                    </label>
+                </div>
+                <div class="sidebar-menu">
+                    <label class="sidebar-menu-label">
+                        Menu
+                    </label>
+                    <div class="sidebar-menu-list">
+                        <a href="#"><p>Home</p></a>
+                        <a href="#about"><p>About</p></a>
+                        <a href="#experiences"><p>Experiences</p></a>
+                        <a href="#projects"><p>Projects</p></a>
+                    </div>
+                </div>
+                <div class="sidebar-logo">
+                    <a href="#"><img loading="lazy" src="/styles/icons/logoblack.webp" alt="logo" class="logo"/></a>
+                </div>
+            </aside>
+        </header>
         <main>
 
             <section id="home" class="home">
@@ -80,15 +97,15 @@
                     </a>
                 </div>
                 <div class="home-image-container">
-                    <img src="/styles/images/me.jpg" class="home-image"/>
+                    <img loading="lazy" src="/styles/images/me.webp" alt="farel" class="home-image"/>
                 </div>
             </section>
             <section id="about" class="about">
                 <div class="about-parent">
                     <div class="about-container">
-                        <h1 class="about-title">
+                        <h2 class="about-title">
                             About Me
-                        </h1>
+                        </h2>
                     </div>
                     <div class="about-content">
                         Hello, my name is Farel Winalda. I am an undergraduate student at Bandung Institute of Technology (ITB) majoring in Informatics Engineering who is highly enthusiastic in Software Engineering and Cyber Security. I am eager to learn and seek for experiences and challenges that allow me to develop my skills further in computing environment. I've learned many skills and knowledges throughout the academy. You can also check my CV by clicking into this button
@@ -101,51 +118,50 @@
                         </a>
                     </div>
                     <div class="about-skill">
-                        <h1 class="about-title">
+                        <h2 class="about-title">
                             My Skills
-                        </h1>
+                        </h2>
                     </div>
                     <div class="about-skill-content">
-                        <div><img src="/styles/images/reactjs.png" alt="reactjs"/></div>
-                        <div><img src="/styles/images/nodejs.png" alt="nodejs"/></div>
-                        <div><img src="/styles/images/nextjs.png" alt="nextjs"/></div>
-                        <div><img src="/styles/images/nextauth.png" alt="nextauth"/></div>
-                        <div><img src="/styles/images/tailwind.png" alt="tailwind"/></div>
-                        <div><img src="/styles/images/prisma.png" alt="prisma"/></div>
-                        <div><img src="/styles/images/drizzle.png" alt="drizzle"/></div>
-                        <div><img src="/styles/images/postgre.png" alt="postgre"/></div>
-                        <div><img src="/styles/images/mysql.png" alt="mysql"/></div>
-                        <div><img src="/styles/images/mongodb.png" alt="mongodb"/></div>
-                        <div><img src="/styles/images/golang.png" alt="golang"/></div>
-                        <div><img src="/styles/images/trpc.png" alt="trpx"/></div>
-                        <div><img src="/styles/images/socket.png" alt="socket"/></div>
-                        <div><img src="/styles/images/dotnet.png" alt="dotnet"/></div>
-                        <div><img src="/styles/images/aspnet.png" alt="aspnet"></div>
-                        <div><img src="/styles/images/flask.png" alt="flask"></div>
-                        <div><img src="/styles/images/javafx.png" alt="javafx"></div>
+                        <div><img loading="lazy" src="/styles/images/reactjs.webp" alt="reactjs"/></div>
+                        <div><img loading="lazy" src="/styles/images/nodejs.webp" alt="nodejs"/></div>
+                        <div><img loading="lazy" src="/styles/images/nextjs.webp" alt="nextjs"/></div>
+                        <div><img loading="lazy" src="/styles/images/nextauth.webp" alt="nextauth"/></div>
+                        <div><img loading="lazy" src="/styles/images/tailwind.webp" alt="tailwind"/></div>
+                        <div><img loading="lazy" src="/styles/images/prisma.webp" alt="prisma"/></div>
+                        <div><img loading="lazy" src="/styles/images/drizzle.webp" alt="drizzle"/></div>
+                        <div><img loading="lazy" src="/styles/images/postgre.webp" alt="postgre"/></div>
+                        <div><img loading="lazy" src="/styles/images/mysql.webp" alt="mysql"/></div>
+                        <div><img loading="lazy" src="/styles/images/mongodb.webp" alt="mongodb"/></div>
+                        <div><img loading="lazy" src="/styles/images/golang.webp" alt="golang"/></div>
+                        <div><img loading="lazy" src="/styles/images/trpc.webp" alt="trpx"/></div>
+                        <div><img loading="lazy" src="/styles/images/socket.webp" alt="socket"/></div>
+                        <div><img loading="lazy" src="/styles/images/dotnet.webp" alt="dotnet"/></div>
+                        <div><img loading="lazy" src="/styles/images/aspnet.webp" alt="aspnet"></div>
+                        <div><img loading="lazy" src="/styles/images/flask.webp" alt="flask"></div>
+                        <div><img loading="lazy" src="/styles/images/javafx.webp" alt="javafx"></div>
                     </div>
                 </div>
             </section>
             <section id="experiences" class="experiences">
                 <div class="experiences-parent">
                     <div class="experiences-container">
-                        <h1 class="experiences-title">
+                        <h2 class="experiences-title">
                             Experiences
-                        </h1>
+                        </h2>
                     </div>
                     <div class="experiences-content">
                         <div class="experiences-organization">
-                            <h1>
+                            <h3>
                                 Organization
-                            </h1>
+                            </h3>
                             <div class="experiences-organization-items">
                                 <div class="right"></div>
-                                <img src="/styles/icons/timeline.png" class="experiences-organization-img"/>
-                                <img src="/styles/icons/timeline2.png" class="experiences-organization-img-sm"/>
+                                <img loading="lazy" src="/styles/icons/timeline.webp" alt="timeline" class="experiences-organization-img" loading="lazy"/>
                                 <div>
-                                    <h2 class="experiences-organization-title">
+                                    <h4 class="experiences-organization-title">
                                         Himpunan Mahasiswa Informatika (HMIF ITB)
-                                    </h2>
+                                    </h4>
                                     <p class="experiences-organization-caption">
                                         September 2023 - Now
                                     </p>
@@ -153,27 +169,25 @@
                             </div>
                             <div class="experiences-organization-items">
                                 <div class="right">
-                                    <h2 class="experiences-organization-title">
+                                    <h4 class="experiences-organization-title">
                                         COMLABS ITB (Laboratorium Komputasi)
-                                    </h2>
+                                    </h4>
                                     <p class="experiences-organization-caption">
                                         September 2023 - December 2023
                                     </p>
                                 </div>
-                                <img src="/styles/icons/timeline.png" class="experiences-organization-img"/>
-                                <img src="/styles/icons/timeline2.png" class="experiences-organization-img-sm"/>
+                                <img loading="lazy" src="/styles/icons/timeline.webp" alt="timeline" class="experiences-organization-img" loading="lazy"/>
                                 <div>
                                 </div>
                             </div>
                             <div class="experiences-organization-items">
                                 <div>
                                 </div>
-                                <img src="/styles/icons/timeline.png" class="experiences-organization-img"/>
-                                <img src="/styles/icons/timeline2.png" class="experiences-organization-img-sm"/>
+                                <img loading="lazy" src="/styles/icons/timeline.webp" alt="timeline" class="experiences-organization-img" loading="lazy"/>
                                 <div>
-                                    <h2 class="experiences-organization-title">
+                                    <h4 class="experiences-organization-title">
                                         Unit Bulu Tangkis (UBT ITB)
-                                    </h2>
+                                    </h4>
                                     <p class="experiences-organization-caption">
                                         November 2022 - Now
                                     </p>
@@ -181,15 +195,14 @@
                             </div>
                             <div class="experiences-organization-items">
                                 <div class="right">
-                                    <h2 class="experiences-organization-title">
+                                    <h4 class="experiences-organization-title">
                                         Keluarga Mahasiswa Buddhist Dhammanano (KMB ITB)
-                                    </h2>
+                                    </h4>
                                     <p class="experiences-organization-caption">
                                         September 2022 - Now
                                     </p>
                                 </div>
-                                <img src="/styles/icons/timeline.png" class="experiences-organization-img"/>
-                                <img src="/styles/icons/timeline2.png" class="experiences-organization-img-sm"/>
+                                <img loading="lazy" src="/styles/icons/timeline.webp" alt="timeline" class="experiences-organization-img" loading="lazy"/>
                                 <div>
                                 </div>
                             </div>
@@ -197,20 +210,19 @@
                         <div class="experiences-split">
                         </div>
                         <div class="experiences-volunteer">
-                            <h1>
+                            <h3>
                                 Volunteer
-                            </h1>
+                            </h3>
                             <div class="experiences-volunteer-items">
                                 <div class="right"></div>
-                                <img src="/styles/icons/timeline.png" class="experiences-volunteer-img"/>
-                                <img src="/styles/icons/timeline2.png" class="experiences-volunteer-img-sm"/>
+                                <img loading="lazy" src="/styles/icons/timeline.webp" alt="timeline" class="experiences-volunteer-img" loading="lazy"/>
                                 <div>
-                                    <h2 class="experiences-volunteer-title">
+                                    <h4 class="experiences-volunteer-title">
                                         Kaderisasi Anggota Terpusat (KAT ITB)
-                                    </h2>
-                                    <h3 class="experiences-volunteer-description">
+                                    </h4>
+                                    <h5 class="experiences-volunteer-description">
                                         Backend Developer Division Information
-                                    </h3>
+                                    </h5>
                                     <p class="experiences-volunteer-caption">
                                         August 2024 - September 2024
                                     </p>
@@ -218,33 +230,31 @@
                             </div>
                             <div class="experiences-volunteer-items">
                                 <div class="right">
-                                    <h2 class="experiences-volunteer-title">
+                                    <h4 class="experiences-volunteer-title">
                                         SPARTA HMIF 2024
-                                    </h2>
-                                    <h3 class="experiences-volunteer-description">
+                                    </h4>
+                                    <h5 class="experiences-volunteer-description">
                                         Backend Developer
-                                    </h3>
+                                    </h5>
                                     <p class="experiences-volunteer-caption">
                                         August 2024 - September 2024
                                     </p>
                                 </div>
-                                <img src="/styles/icons/timeline.png" class="experiences-volunteer-img"/>
-                                <img src="/styles/icons/timeline2.png" class="experiences-volunteer-img-sm"/>
+                                <img loading="lazy" src="/styles/icons/timeline.webp" alt="timeline" class="experiences-volunteer-img" loading="lazy"/>
                                 <div>
                                 </div>
                             </div>
                             <div class="experiences-volunteer-items">
                                 <div class="right">
                                 </div>
-                                <img src="/styles/icons/timeline.png" class="experiences-volunteer-img"/>
-                                <img src="/styles/icons/timeline2.png" class="experiences-volunteer-img-sm"/>
+                                <img loading="lazy" src="/styles/icons/timeline.webp" alt="timeline" class="experiences-volunteer-img" loading="lazy"/>
                                 <div>
-                                    <h2 class="experiences-volunteer-title">
+                                    <h4 class="experiences-volunteer-title">
                                         Ganesha Badminton Championship (GBC UBT)
-                                    </h2>
-                                    <h3 class="experiences-volunteer-description">
+                                    </h4>
+                                    <h5 class="experiences-volunteer-description">
                                         Fullstack Developer
-                                    </h3>
+                                    </h5>
                                     <p class="experiences-volunteer-caption">
                                         April 2024 - May 2024
                                     </p>
@@ -252,33 +262,31 @@
                             </div>
                             <div class="experiences-volunteer-items">
                                 <div class="right">
-                                    <h2 class="experiences-volunteer-title">
+                                    <h4 class="experiences-volunteer-title">
                                         Parade Wisuda April 2024
-                                    </h2>
-                                    <h3 class="experiences-volunteer-description">
+                                    </h4>
+                                    <h5 class="experiences-volunteer-description">
                                         Backend Developer
-                                    </h3>
+                                    </h5>
                                     <p class="experiences-volunteer-caption">
                                         March 2024 - April 2024
                                     </p>
                                 </div>
-                                <img src="/styles/icons/timeline.png" class="experiences-volunteer-img"/>
-                                <img src="/styles/icons/timeline2.png" class="experiences-volunteer-img-sm"/>
+                                <img loading="lazy" src="/styles/icons/timeline.webp" alt="timeline" class="experiences-volunteer-img" loading="lazy"/>
                                 <div>
                                 </div>
                             </div>
                             <div class="experiences-volunteer-items">
                                 <div class="right">
                                 </div>
-                                <img src="/styles/icons/timeline.png" class="experiences-volunteer-img"/>
-                                <img src="/styles/icons/timeline2.png" class="experiences-volunteer-img-sm"/>
+                                <img loading="lazy" src="/styles/icons/timeline.webp" alt="timeline" class="experiences-volunteer-img" loading="lazy"/>
                                 <div>
-                                    <h2 class="experiences-volunteer-title">
+                                    <h4 class="experiences-volunteer-title">
                                         Parade Wisuda Oktober 2023
-                                    </h2>
-                                    <h3 class="experiences-volunteer-description">
+                                    </h4>
+                                    <h5 class="experiences-volunteer-description">
                                         Frontend Developer
-                                    </h3>
+                                    </h5>
                                     <p class="experiences-volunteer-caption">
                                         September 2023 - October 2023
                                     </p>
@@ -291,27 +299,27 @@
             <section id="projects" class="projects">
                 <div class="projects-parent">
                     <div class="projects-container">
-                        <h1 class="projects-title">
+                        <h2 class="projects-title">
                             Projects
-                        </h1>
+                        </h2>
                     </div>
                     <div class="projects-content">
         
                         <a href="https://gbc-ubt-2024.vercel.app/">
                             <div class="projects-card">
-                                <img src="/styles/images/GBC_UBT.png" alt="Project Image" class="projects-card-image" />
+                                <img loading="lazy" src="/styles/images/GBC_UBT.webp" alt="Project Image" class="projects-card-image" />
                                 <div class="projects-card-caption">
                                     <h3>Ganesha Badminton Championship UBT ITB</h3>
                                 </div>
                                 <div class="projects-card-description">
                                     <p>Web Application Schedule and Table / Standings for Badminton Tournament for GBC UBT 2024</p>
                                     <div class="projects-card-description-symbol">
-                                        <img src="/styles/images/nextjs.png" alt="gbc-next"/>
-                                        <img src="/styles/images/nextauth.png" alt="gbc-nextauth"/>
-                                        <img src="/styles/images/tailwind.png" alt="gbc-tailwind"/>
-                                        <img src="/styles/images/prisma.png" alt="gbc-prisma"/>
-                                        <img src="/styles/images/socket.png" alt="gbc-socket"/>
-                                        <img src="/styles/images/postgre.png" alt="gbc-postgre"/>
+                                        <img loading="lazy" src="/styles/images/nextjs.webp" alt="gbc-next"/>
+                                        <img loading="lazy" src="/styles/images/nextauth.webp" alt="gbc-nextauth"/>
+                                        <img loading="lazy" src="/styles/images/tailwind.webp" alt="gbc-tailwind"/>
+                                        <img loading="lazy" src="/styles/images/prisma.webp" alt="gbc-prisma"/>
+                                        <img loading="lazy" src="/styles/images/socket.webp" alt="gbc-socket"/>
+                                        <img loading="lazy" src="/styles/images/postgre.webp" alt="gbc-postgre"/>
                                     </div>
                                 </div>
                             </div>
@@ -319,16 +327,16 @@
         
                         <a href="https://github.com/FarelW/Tubes3_Di_KelarinTubes">
                             <div class="projects-card">
-                                <img src="/styles/images/DikelarinTubes.png" alt="Project Image" class="projects-card-image" />
+                                <img loading="lazy" src="/styles/images/DikelarinTubes.webp" alt="Project Image" class="projects-card-image" />
                                 <div class="projects-card-caption">
                                     <h3>Biometric Matching App</h3>
                                 </div>
                                 <div class="projects-card-description">
                                     <p>GUI Application for Biometrics Matching with Dummy Biometrics and Identities</p>
                                     <div class="projects-card-description-symbol">
-                                        <img src="/styles/images/dotnet.png" alt="bio-dotnet"/>
-                                        <img src="/styles/images/aspnet.png" alt="bio-aspnet"/>
-                                        <img src="/styles/images/postgre.png" alt="bio-postgre"/>
+                                        <img loading="lazy" src="/styles/images/dotnet.webp" alt="bio-dotnet"/>
+                                        <img loading="lazy" src="/styles/images/aspnet.webp" alt="bio-aspnet"/>
+                                        <img loading="lazy" src="/styles/images/postgre.webp" alt="bio-postgre"/>
                                     </div>
                                 </div>
                             </div>
@@ -336,17 +344,17 @@
         
                         <a href="https://github.com/FarelW/Tubes2_PathFinder">
                             <div class="projects-card">
-                                <img src="/styles/images/PathFinder.png" alt="Project Image" class="projects-card-image" />
+                                <img loading="lazy" src="/styles/images/PathFinder.webp" alt="Project Image" class="projects-card-image" />
                                 <div class="projects-card-caption">
                                     <h3>Wikipedia Searching Web App PathFinder</h3>
                                 </div>
                                 <div class="projects-card-description">
                                     <p>Web Application for Finding the Best Route from Initial Page to Final Page on Wikipedia</p>
                                     <div class="projects-card-description-symbol">
-                                        <img src="/styles/images/nextjs.png" alt="path-nextjs"/>
-                                        <img src="/styles/images/tailwind.png" alt="path-tailwind"/>
-                                        <img src="/styles/images/golang.png" alt="path-golang"/>
-                                        <img src="/styles/images/postgre.png" alt="path-postgre"/>
+                                        <img loading="lazy" src="/styles/images/nextjs.webp" alt="path-nextjs"/>
+                                        <img loading="lazy" src="/styles/images/tailwind.webp" alt="path-tailwind"/>
+                                        <img loading="lazy" src="/styles/images/golang.webp" alt="path-golang"/>
+                                        <img loading="lazy" src="/styles/images/postgre.webp" alt="path-postgre"/>
                                     </div>
                                 </div>
                             </div>
@@ -354,14 +362,14 @@
         
                         <a href="https://github.com/FarelW/Tucil3_13522047">
                             <div class="projects-card">
-                                <img src="/styles/images/WordLadder.png" alt="Project Image" class="projects-card-image" />
+                                <img loading="lazy" src="/styles/images/WordLadder.webp" alt="Project Image" class="projects-card-image" />
                                 <div class="projects-card-caption">
                                     <h3>Word Ladder App Game</h3>
                                 </div>
                                 <div class="projects-card-description">
                                     <p>GUI Application Word Ladder Game</p>
                                     <div class="projects-card-description-symbol">
-                                        <img src="/styles/images/javafx.png" alt="word-javafx"/>
+                                        <img loading="lazy" src="/styles/images/javafx.webp" alt="word-javafx"/>
                                     </div>
                                 </div>
                             </div>
@@ -369,16 +377,16 @@
             
                         <a href="https://github.com/FarelW/Tucil1-13522047">
                             <div class="projects-card">
-                                <img src="/styles/images/Cyberpunk.png" alt="Project Image" class="projects-card-image" />
+                                <img loading="lazy" src="/styles/images/Cyberpunk.webp" alt="Project Image" class="projects-card-image" />
                                 <div class="projects-card-caption">
                                     <h3>CyberPunk 2077 Web App Game</h3>
                                 </div>
                                 <div class="projects-card-description">
                                     <p>Web Application Cyberpunk 2077 Hacking Game</p>
                                     <div class="projects-card-description-symbol">
-                                        <img src="/styles/images/nextjs.png" alt="path-nextjs"/>
-                                        <img src="/styles/images/tailwind.png" alt="path-tailwind"/>
-                                        <img src="/styles/images/golang.png" alt="path-golang"/>
+                                        <img loading="lazy" src="/styles/images/nextjs.webp" alt="path-nextjs"/>
+                                        <img loading="lazy" src="/styles/images/tailwind.webp" alt="path-tailwind"/>
+                                        <img loading="lazy" src="/styles/images/golang.webp" alt="path-golang"/>
                                     </div>
                                 </div>
                             </div>
@@ -386,16 +394,16 @@
         
                         <a href="https://github.com/FarelW/Algeo02-22045">
                             <div class="projects-card">
-                                <img src="/styles/images/CBIR.png" alt="Project Image" class="projects-card-image" />
+                                <img loading="lazy" src="/styles/images/CBIR.webp" alt="Project Image" class="projects-card-image" />
                                 <div class="projects-card-caption">
                                     <h3>MatchLens Image Matching Web App</h3>
                                 </div>
                                 <div class="projects-card-description">
                                     <p>Web Application for finding Similar Image based on Color and Texture</p>
                                     <div class="projects-card-description-symbol">
-                                        <img src="/styles/images/reactjs.png" alt="path-reactjs"/>
-                                        <img src="/styles/images/tailwind.png" alt="path-tailwind"/>
-                                        <img src="/styles/images/golang.png" alt="path-golang"/>
+                                        <img loading="lazy" src="/styles/images/reactjs.webp" alt="path-reactjs"/>
+                                        <img loading="lazy" src="/styles/images/tailwind.webp" alt="path-tailwind"/>
+                                        <img loading="lazy" src="/styles/images/golang.webp" alt="path-golang"/>
                                     </div>
                                 </div>
                             </div>
@@ -408,27 +416,19 @@
         <footer class="footer">
             <div class="footer-container">
                 <div class="footer-logo">
-                    <a href="#"><img src="/styles/icons/logo.png" alt="logo" class="logo"/></a>
+                    <a href="#"><img loading="lazy" src="/styles/icons/logo.webp" alt="logo" class="logo"/></a>
                 </div>
                 <div class="footer-copyright">
                     © 2024 Farel Winalda, LLC. All right reserved
                 </div>
             </div>
             <div class="footer-icons">
-                <a href="https://github.com/FarelW"><img src="/styles/icons/github.svg" alt="github-icons" class="footer-icons-logo"/></a>
-                <a href="https://www.linkedin.com/in/farel-winalda/"><img src="/styles/icons/linkedin.svg" alt="linkedin-icons" class="footer-icons-logo"/></a>
-                <a href="https://www.instagram.com/farel_winalda"><img src="/styles/icons/instagram.svg" alt="instagram-icons" class="footer-icons-logo"/></a>
-                <a href="https://wa.me/+6281278647521"><img src="/styles/icons/whatsapp.svg" alt="whatsapp-icons" class="footer-icons-logo"/></a>
-                <a href="mailto:winaldafarell@gmail.com"><img src="/styles/icons/email.svg" alt="email-icons" class="footer-icons-logo"/></a>
+                <a href="https://github.com/FarelW"><img loading="lazy" src="/styles/icons/github.svg" alt="github-icons" class="footer-icons-logo"/></a>
+                <a href="https://www.linkedin.com/in/farel-winalda/"><img loading="lazy" src="/styles/icons/linkedin.svg" alt="linkedin-icons" class="footer-icons-logo"/></a>
+                <a href="https://www.instagram.com/farel_winalda"><img loading="lazy" src="/styles/icons/instagram.svg" alt="instagram-icons" class="footer-icons-logo"/></a>
+                <a href="https://wa.me/+6281278647521"><img loading="lazy" src="/styles/icons/whatsapp.svg" alt="whatsapp-icons" class="footer-icons-logo"/></a>
+                <a href="mailto:winaldafarell@gmail.com"><img loading="lazy" src="/styles/icons/email.svg" alt="email-icons" class="footer-icons-logo"/></a>
             </div>
         </footer>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-LFBMQK2E1V"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-LFBMQK2E1V');
-        </script>
     </body>
 </html>
